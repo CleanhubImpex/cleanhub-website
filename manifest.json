@@ -1,0 +1,17 @@
+{
+  "name": "CleanHub Impex",
+  "short_name": "CleanHub",
+  "description": "Cleaning products for homes and businesses in Addis Ababa.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7f1",
+  "theme_color": "#172558",
+  "icons": [
+    {
+      "src": "/assets/cleanhub-logo.jpg",
+      "sizes": "640x640",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ The package includes:
 - `render.yaml` for a Render Static Site deployment.
 - `vercel.json` for Vercel deployments.
 - `robots.txt` and `sitemap.xml` for search engines.
-- `site.webmanifest` for installable-site metadata.
+- `manifest.json` for installable-site metadata with the correct production MIME type.
 
 ## Connecting the live catalog
 
