@@ -1,0 +1,22 @@
+[
+  { "name": "GOAL Powder", "detail": "500 g detergent powder", "detailAm": "500 ግራም የልብስ ማጠቢያ ዱቄት", "category": "detergents" },
+  { "name": "VIM Powder", "detail": "500 g cleaning powder", "detailAm": "500 ግራም የጽዳት ዱቄት", "category": "detergents" },
+  { "name": "LIME Liquid", "detail": "2 L liquid cleaner", "detailAm": "2 ሊትር ፈሳሽ ማጽጃ", "category": "detergents" },
+  { "name": "GOLD STAR Liquid", "detail": "Available in 2 L and 5 L", "detailAm": "በ2 እና 5 ሊትር ይገኛል", "category": "detergents" },
+  { "name": "Largo Liquid Detergent", "detail": "Available in 2 L and 5 L", "detailAm": "በ2 እና 5 ሊትር ይገኛል", "category": "detergents" },
+  { "name": "MAS Hand Wash", "detail": "Everyday hand-cleaning solution", "detailAm": "ለዕለት ተዕለት የእጅ ማጠቢያ", "category": "detergents" },
+  { "name": "Base-X Hand Wash", "detail": "Hand wash for home and business", "detailAm": "ለቤት እና ለንግድ ቦታ የእጅ ማጠቢያ", "category": "detergents" },
+  { "name": "Langano Broom", "detail": "Locally manufactured monofilament broom", "detailAm": "በኢትዮጵያ የተመረተ መጥረጊያ", "category": "brooms" },
+  { "name": "Abijata Broom", "detail": "Durable broom for frequent use", "detailAm": "ለተደጋጋሚ አጠቃቀም የሚሆን ጠንካራ መጥረጊያ", "category": "brooms" },
+  { "name": "Shalla Broom", "detail": "Professional cleaning performance", "detailAm": "ለሙያዊ ጽዳት የተዘጋጀ መጥረጊያ", "category": "brooms" },
+  { "name": "Kawya Brush", "detail": "Locally manufactured cleaning brush", "detailAm": "በኢትዮጵያ የተመረተ የጽዳት ብሩሽ", "category": "brooms" },
+  { "name": "NICE Soft Toilet Tissue", "detail": "Soft everyday toilet tissue", "detailAm": "ለስላሳ የመፀዳጃ ቤት ሶፋት", "category": "tissues" },
+  { "name": "NICE Soft Napkin", "detail": "2-ply, 33 cm napkin", "detailAm": "ባለ2 ድርብ፣ 33 ሴ.ሜ ናፕኪን", "category": "tissues" },
+  { "name": "MAMCO Facial Tissue", "detail": "Available in 180 and 200 sheets", "detailAm": "በ180 እና 200 ብዛት ይገኛል", "category": "tissues" },
+  { "name": "MAMCO Toilet Tissue", "detail": "100 g toilet tissue", "detailAm": "100 ግራም የመፀዳጃ ቤት ሶፋት", "category": "tissues" },
+  { "name": "MAMCO Kitchen Towel", "detail": "Available in 400 g and 800 g", "detailAm": "በ400 እና 800 ግራም ይገኛል", "category": "tissues" },
+  { "name": "MAMCO Table Napkin", "detail": "150-sheet table napkin", "detailAm": "ባለ150 ብዛት የጠረጴዛ ናፕኪን", "category": "tissues" },
+  { "name": "120 L Roto Bin", "detail": "Mobile waste bin for indoor and outdoor use", "detailAm": "ለውስጥና ለውጭ አገልግሎት የቆሻሻ ቢን", "category": "bins" },
+  { "name": "240 L Roto Bin", "detail": "Heavy-duty mobile waste bin", "detailAm": "ጠንካራ ተንቀሳቃሽ የቆሻሻ ቢን", "category": "bins" },
+  { "name": "500 L Roto Bin", "detail": "Large-capacity commercial waste bin", "detailAm": "ትልቅ መጠን ያለው የንግድ ቦታ የቆሻሻ ቢን", "category": "bins" }
+]

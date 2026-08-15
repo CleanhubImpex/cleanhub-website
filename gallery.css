@@ -1,0 +1,116 @@
+.hero-card {
+  aspect-ratio: 4 / 5;
+  border-radius: 36px;
+  padding: 10px;
+  transform: rotate(2deg);
+}
+
+.hero-card img { border-radius: 28px; }
+
+.shop-gallery { padding-top: 40px; }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr;
+  grid-template-rows: repeat(2, 270px);
+  gap: 14px;
+}
+
+.photo-grid figure {
+  background: var(--navy);
+  border-radius: 22px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-grid .photo-large { grid-row: 1 / 3; }
+.photo-grid .photo-wide { grid-column: 2 / 4; }
+
+.photo-grid img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+  width: 100%;
+}
+
+.photo-grid figure:hover img { transform: scale(1.04); }
+
+.photo-grid figure::after {
+  background: linear-gradient(transparent 45%, rgba(7, 15, 40, .72));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.photo-grid figcaption {
+  align-items: center;
+  bottom: 0;
+  color: white;
+  display: flex;
+  font-size: 13px;
+  font-weight: 800;
+  justify-content: space-between;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.photo-grid figcaption b { color: #79e27e; font-size: 11px; }
+
+.featured-media {
+  align-items: center;
+  background: #e1f3dd;
+  display: grid;
+  gap: 8vw;
+  grid-template-columns: 1fr 460px;
+}
+
+.media-copy > p:not(.eyebrow) {
+  color: #657067;
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+.media-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 28px 0;
+}
+
+.media-products span {
+  background: white;
+  border: 1px solid #c8ddc5;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 10px 14px;
+}
+
+.telegram-embed {
+  background: white;
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(23, 37, 88, .12);
+  min-height: 420px;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.telegram-embed iframe { max-width: 100% !important; }
+
+@media (max-width: 800px) {
+  .featured-media { grid-template-columns: 1fr; }
+  .telegram-embed { min-height: 360px; width: 100%; }
+  .photo-grid { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 230px); }
+  .photo-grid .photo-large { grid-column: 1 / 3; grid-row: auto; }
+  .photo-grid .photo-wide { grid-column: 1 / 3; }
+}
+
+@media (max-width: 520px) {
+  .photo-grid { display: flex; flex-direction: column; }
+  .photo-grid figure { height: 260px; }
+}

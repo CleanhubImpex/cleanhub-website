@@ -1,0 +1,37 @@
+.skip-link {
+  background: var(--navy);
+  color: white;
+  left: 16px;
+  padding: 12px 16px;
+  position: fixed;
+  top: -80px;
+  z-index: 100;
+}
+
+.skip-link:focus { top: 16px; }
+
+:focus-visible {
+  outline: 3px solid #168c2a;
+  outline-offset: 4px;
+}
+
+.mobile-management { display: none; }
+
+@media (max-width: 980px) {
+  .mobile-management { display: block; }
+}
+
+@media (max-width: 600px) {
+  .site-header > .header-actions .portal-link { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
