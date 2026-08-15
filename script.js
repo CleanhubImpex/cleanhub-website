@@ -4,6 +4,7 @@ const translations = {
   }
 };
 translations.am.managementLogin = "የማኔጅመንት መግቢያ";
+translations.am.heroTitle = "በአዲስ አበባ ለሁሉም ቦታ የሚሆኑ የጽዳት ምርቶች።";
 Object.assign(translations.am, {
   insideStore: "በክሊንሀብ ውስጥ",
   galleryTitle: "በመደብራችን ያሉትን ምርቶች ይመልከቱ።",
