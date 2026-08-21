@@ -27,6 +27,7 @@ Object.assign(translations.am, {
   ,filterTissues: "ሶፋት"
   ,filterBins: "የቆሻሻ ቢኖች"
   ,priceNote: "ለዛሬው ዋጋ እና የእቃ መኖር ያግኙን። ለተመረጡ የጅምላ ትዕዛዞች ልዩ ዋጋ አለ።"
+  ,viewCategory: "ምድቡን ይመልከቱ →"
 });
 let language = "en";
 const originals = {};
@@ -46,9 +47,14 @@ document.querySelector(".language-button").addEventListener("click", () => {
   try { localStorage.setItem("cleanhub-language", language); } catch {}
 });
 const menu = document.querySelector(".menu-button");
-menu.addEventListener("click",()=>{const nav=document.querySelector(".nav-links");nav.classList.toggle("open");menu.setAttribute("aria-expanded",nav.classList.contains("open"))});
-document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.querySelector(".nav-links").classList.remove("open")));
-document.addEventListener("keydown", event => { if (event.key === "Escape") { document.querySelector(".nav-links").classList.remove("open"); menu.setAttribute("aria-expanded", "false"); } });
+const setMenuState = open => {
+  document.querySelector(".nav-links").classList.toggle("open", open);
+  menu.setAttribute("aria-expanded", String(open));
+  menu.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+};
+menu.addEventListener("click", () => setMenuState(menu.getAttribute("aria-expanded") !== "true"));
+document.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", () => setMenuState(false)));
+document.addEventListener("keydown", event => { if (event.key === "Escape") setMenuState(false); });
 const observer = new IntersectionObserver(entries=>entries.forEach(entry=>entry.isIntersecting&&entry.target.classList.add("visible")),{threshold:.12});
 document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 document.getElementById("year").textContent=new Date().getFullYear();
