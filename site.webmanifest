@@ -8,9 +8,15 @@
   "theme_color": "#172558",
   "icons": [
     {
-      "src": "/assets/cleanhub-logo.jpg",
-      "sizes": "640x640",
-      "type": "image/jpeg",
+      "src": "/assets/favicon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
